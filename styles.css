@@ -11,7 +11,8 @@
 /* Visual refinement: clearer rhythm, stronger links, and easier scanning. */
 @media (min-width: 801px) {
   .content-section { padding-top: 86px; padding-bottom: 86px; }
-  #estudos .content-section { padding-bottom: 54px; }
+  #estudos .content-section,
+  #work .content-section { padding-bottom: 54px; }
   #academic-work .content-section,
   #trabalhos-academicos .content-section { padding-top: 54px; padding-bottom: 82px; }
   .section-heading { margin-bottom: 30px; }
@@ -53,4 +54,44 @@
 .sample-block .case-disclaimer { font-size: 11px; color: #5d655c; }
 @media (prefers-reduced-motion: reduce) {
   .sample-block a.text-link { transition: none; }
+}
+
+
+/* Case studies: use the full content width and make each card easier to scan. */
+.work-section .content-section {
+  grid-template-columns: minmax(0, 1fr);
+  gap: 25px;
+}
+.work-section .section-label { margin-bottom: 0; }
+.work-section .section-content { min-width: 0; }
+.work-section .section-heading { margin-bottom: 34px; }
+.sample-grid { gap: 20px; }
+.sample-case {
+  padding: 26px;
+  border-top: 2px solid #789078;
+  background: #fffefa;
+}
+.sample-case .classification {
+  min-width: 118px;
+  background: #f0f3ed;
+  border-color: #b4c1b1;
+  color: #3e5a41;
+}
+.sample-block { padding-top: 20px; }
+.sample-block h4 {
+  margin: 18px 0 7px;
+  color: #455a46;
+  font: 600 10px var(--mono);
+  letter-spacing: .045em;
+  text-transform: uppercase;
+}
+.sample-block p { font-size: 13px; line-height: 1.7; }
+.sample-block .skill-tag { color: #405b43; font-size: 11px; }
+@media (max-width: 800px) {
+  .work-section .content-section { grid-template-columns: minmax(0, 1fr); }
+  .sample-case { padding: 22px; }
+}
+@media (max-width: 600px) {
+  .sample-case { padding: 18px; }
+  .sample-case .classification { white-space: normal; }
 }
