@@ -95,3 +95,14 @@
   .sample-case { padding: 18px; }
   .sample-case .classification { white-space: normal; }
 }
+
+/* Keep the three hypothetical examples on one balanced row on wide screens. */
+@media (min-width: 1050px) {
+  .hypothetical-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .hypothetical-grid .sample-case { padding: 20px; }
+  .hypothetical-grid .case-header { gap: 10px; }
+  .hypothetical-grid .case-header h3 { font-size: 17px; }
+  .hypothetical-grid .sample-case .classification { min-width: 0; max-width: 105px; font-size: 10px; }
+  .hypothetical-grid .case-meta { flex-direction: column; gap: 4px; }
+  .hypothetical-grid .sample-block p { font-size: 12px; line-height: 1.6; }
+}
