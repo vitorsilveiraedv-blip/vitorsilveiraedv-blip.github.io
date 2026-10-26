@@ -18,6 +18,7 @@ Upload the contents of this folder to a static host such as GitHub Pages, Netlif
 
 ## Content status
 
+- The introduction, About, and Skills sections in both languages note contract experience submitting AI response evaluations in Brazilian Portuguese. No client name, task content, confidential criteria, or performance claims are disclosed.
 - Complete in both languages: introduction, about, skills, evaluation method, reviewed CPF/travel-document demonstration, Catarina Atende product and conversational QA case, three hypothetical worked samples, development goals, and contact details.
 - The Catarina Atende section summarizes the founder/Product Owner and manual QA contribution, without exposing source code. Its project status is based on July–August 2026 records, and the AI provider/LLM integration was not verified in the materials reviewed.
 - The search quality, response comparison, and Brazilian Portuguese context examples are explicitly labeled hypothetical. They demonstrate an approach and must not be described as client work or real completed evaluator assignments.
